@@ -1,0 +1,10 @@
+.TodoCounter {
+  font-size: 36px;
+  text-align: center;
+  margin: 0;
+  padding: 52px 12px;
+}
+
+.TodoCounter--loading {
+  opacity: 25%;
+}

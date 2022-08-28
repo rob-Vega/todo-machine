@@ -1,0 +1,49 @@
+.TodoItem {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  width: 230px;
+  border: 2px solid black;
+  padding: 10px;
+  height: fit-content;
+  box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
+  overflow-x: hidden;
+}
+
+.TodoItem-p--complete {
+  text-decoration: line-through;
+}
+
+.TodoItem p {
+  width: 75%;
+}
+
+.Icon {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  width: 24px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.Icon-check {
+  position: absolute;
+  left: 8px;
+}
+.Icon-check--active {
+  color: #4caf50;
+}
+
+.Icon-delete {
+  position: absolute;
+  right: 8px;
+}
+.Icon-delete:hover {
+  color: red;
+}
