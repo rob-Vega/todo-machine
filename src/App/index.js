@@ -7,6 +7,7 @@ import { TodoItem } from "../TodoItem";
 import { CreateTodoButton } from "../CreateTodoButton";
 import { Modal } from "../Modal";
 import { TodoForm } from "../TodoForm";
+import { ChangeAlert } from "../ChangeAlert";
 import "./App.css";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
     searchValue,
     setSearchValue,
     addTodo,
+    sincronizeTodos,
   } = useTodos();
 
   return (
@@ -71,6 +73,7 @@ function App() {
         </Modal>
       )}
       <CreateTodoButton setOpenModal={setOpenModal} />
+      <ChangeAlert sincronize={sincronizeTodos} />
     </section>
   );
 }
