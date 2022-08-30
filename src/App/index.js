@@ -8,6 +8,7 @@ import { CreateTodoButton } from "../CreateTodoButton";
 import { Modal } from "../Modal";
 import { TodoForm } from "../TodoForm";
 import { ChangeAlert } from "../ChangeAlert";
+import { Loading } from "../Loading";
 import "./App.css";
 
 function App() {
@@ -41,7 +42,7 @@ function App() {
         totalTodos={totalTodos}
         searchText={searchValue}
         onError={() => <p>Error</p>}
-        onLoading={() => <p>Cargando...</p>}
+        onLoading={() => <Loading />}
         onEmptyTodos={() => <p>Crea tu primer TODO...</p>}
         onEmptySearchResults={searchText => (
           <p>No hay resultados para {searchText}</p>
